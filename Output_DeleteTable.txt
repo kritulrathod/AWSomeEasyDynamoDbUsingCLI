@@ -1,0 +1,96 @@
+{
+    "TableDescription": {
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "Table_LSI_HashKey",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "TableRangeKey",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "LSIIndexRangeKey",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "GSIIndexHashKey",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "GSIIndexRangeKey",
+                "AttributeType": "S"
+            }
+        ],
+        "TableName": "Items",
+        "KeySchema": [
+            {
+                "AttributeName": "Table_LSI_HashKey",
+                "KeyType": "HASH"
+            },
+            {
+                "AttributeName": "TableRangeKey",
+                "KeyType": "RANGE"
+            }
+        ],
+        "TableStatus": "ACTIVE",
+        "CreationDateTime": 1572670688.567,
+        "ProvisionedThroughput": {
+            "LastIncreaseDateTime": 0.0,
+            "LastDecreaseDateTime": 0.0,
+            "NumberOfDecreasesToday": 0,
+            "ReadCapacityUnits": 1,
+            "WriteCapacityUnits": 1
+        },
+        "TableSizeBytes": 1640,
+        "ItemCount": 10,
+        "TableArn": "arn:aws:dynamodb:ddblocal:000000000000:table/Items",
+        "LocalSecondaryIndexes": [
+            {
+                "IndexName": "string",
+                "KeySchema": [
+                    {
+                        "AttributeName": "Table_LSI_HashKey",
+                        "KeyType": "HASH"
+                    },
+                    {
+                        "AttributeName": "LSIIndexRangeKey",
+                        "KeyType": "RANGE"
+                    }
+                ],
+                "Projection": {
+                    "ProjectionType": "ALL"
+                },
+                "IndexSizeBytes": 1640,
+                "ItemCount": 10,
+                "IndexArn": "arn:aws:dynamodb:ddblocal:000000000000:table/Items/index/string"
+            }
+        ],
+        "GlobalSecondaryIndexes": [
+            {
+                "IndexName": "GlobalSecondaryIndexes-index",
+                "KeySchema": [
+                    {
+                        "AttributeName": "GSIIndexHashKey",
+                        "KeyType": "HASH"
+                    },
+                    {
+                        "AttributeName": "GSIIndexRangeKey",
+                        "KeyType": "RANGE"
+                    }
+                ],
+                "Projection": {
+                    "ProjectionType": "ALL"
+                },
+                "IndexStatus": "ACTIVE",
+                "ProvisionedThroughput": {
+                    "ReadCapacityUnits": 1,
+                    "WriteCapacityUnits": 1
+                },
+                "IndexSizeBytes": 1640,
+                "ItemCount": 10,
+                "IndexArn": "arn:aws:dynamodb:ddblocal:000000000000:table/Items/index/GlobalSecondaryIndexes-index"
+            }
+        ]
+    }
+}

@@ -17,6 +17,15 @@
                     },
                     "GSIIndexRangeKey": {
                         "S": "GSIIndexRangeKey01"
+                    },
+                    "AttributeA": {
+                        "S": "AttributeA01"
+                    },
+                    "AttributeB": {
+                        "S": "AttributeB01"
+                    },
+                    "AttributeC": {
+                        "S": "AttributeC01"
                     }
                 }
             }
@@ -38,6 +47,15 @@
                     },
                     "GSIIndexRangeKey": {
                         "S": "GSIIndexRangeKey02"
+                    },
+                    "AttributeA": {
+                        "S": "AttributeA02"
+                    },
+                    "AttributeB": {
+                        "S": "AttributeB02"
+                    },
+                    "AttributeC": {
+                        "S": "AttributeC02"
                     }
                 }
             }
@@ -59,6 +77,15 @@
                     },
                     "GSIIndexRangeKey": {
                         "S": "GSIIndexRangeKey03"
+                    },
+                    "AttributeA": {
+                        "S": "AttributeA03"
+                    },
+                    "AttributeB": {
+                        "S": "AttributeB03"
+                    },
+                    "AttributeC": {
+                        "S": "AttributeC03"
                     }
                 }
             }
@@ -80,6 +107,15 @@
                     },
                     "GSIIndexRangeKey": {
                         "S": "GSIIndexRangeKey04"
+                    },
+                    "AttributeA": {
+                        "S": "AttributeA04"
+                    },
+                    "AttributeB": {
+                        "S": "AttributeB04"
+                    },
+                    "AttributeC": {
+                        "S": "AttributeC04"
                     }
                 }
             }
@@ -101,6 +137,15 @@
                     },
                     "GSIIndexRangeKey": {
                         "S": "GSIIndexRangeKey05"
+                    },
+                    "AttributeA": {
+                        "S": "AttributeA05"
+                    },
+                    "AttributeB": {
+                        "S": "AttributeB05"
+                    },
+                    "AttributeC": {
+                        "S": "AttributeC05"
                     }
                 }
             }
@@ -122,6 +167,15 @@
                     },
                     "GSIIndexRangeKey": {
                         "S": "GSIIndexRangeKey06"
+                    },
+                    "AttributeA": {
+                        "S": "AttributeA06"
+                    },
+                    "AttributeB": {
+                        "S": "AttributeB06"
+                    },
+                    "AttributeC": {
+                        "S": "AttributeC06"
                     }
                 }
             }
@@ -143,6 +197,15 @@
                     },
                     "GSIIndexRangeKey": {
                         "S": "GSIIndexRangeKey07"
+                    },
+                    "AttributeA": {
+                        "S": "AttributeA07"
+                    },
+                    "AttributeB": {
+                        "S": "AttributeB07"
+                    },
+                    "AttributeC": {
+                        "S": "AttributeC07"
                     }
                 }
             }
@@ -164,6 +227,15 @@
                     },
                     "GSIIndexRangeKey": {
                         "S": "GSIIndexRangeKey08"
+                    },
+                    "AttributeA": {
+                        "S": "AttributeA08"
+                    },
+                    "AttributeB": {
+                        "S": "AttributeB08"
+                    },
+                    "AttributeC": {
+                        "S": "AttributeC08"
                     }
                 }
             }
@@ -185,6 +257,15 @@
                     },
                     "GSIIndexRangeKey": {
                         "S": "GSIIndexRangeKey09"
+                    },
+                    "AttributeA": {
+                        "S": "AttributeA09"
+                    },
+                    "AttributeB": {
+                        "S": "AttributeB09"
+                    },
+                    "AttributeC": {
+                        "S": "AttributeC09"
                     }
                 }
             }
@@ -206,6 +287,15 @@
                     },
                     "GSIIndexRangeKey": {
                         "S": "GSIIndexRangeKey10"
+                    },
+                    "AttributeA": {
+                        "S": "AttributeA10"
+                    },
+                    "AttributeB": {
+                        "S": "AttributeB10"
+                    },
+                    "AttributeC": {
+                        "S": "AttributeC10"
                     }
                 }
             }
