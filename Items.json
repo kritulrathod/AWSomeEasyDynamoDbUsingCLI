@@ -1,0 +1,214 @@
+{
+    "Items": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "Table_LSI_HashKey": {
+                        "S": "Table_LSI_HashKey01"
+                    },
+                    "TableRangeKey": {
+                        "S": "TableRangeKey01"
+                    },
+                    "LSIIndexRangeKey": {
+                        "S": "LSIIndexRangeKey01"
+                    },
+                    "GSIIndexHashKey": {
+                        "S": "GSIIndexHashKey01"
+                    },
+                    "GSIIndexRangeKey": {
+                        "S": "GSIIndexRangeKey01"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Table_LSI_HashKey": {
+                        "S": "Table_LSI_HashKey02"
+                    },
+                    "TableRangeKey": {
+                        "S": "TableRangeKey02"
+                    },
+                    "LSIIndexRangeKey": {
+                        "S": "LSIIndexRangeKey02"
+                    },
+                    "GSIIndexHashKey": {
+                        "S": "GSIIndexHashKey02"
+                    },
+                    "GSIIndexRangeKey": {
+                        "S": "GSIIndexRangeKey02"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Table_LSI_HashKey": {
+                        "S": "Table_LSI_HashKey03"
+                    },
+                    "TableRangeKey": {
+                        "S": "TableRangeKey03"
+                    },
+                    "LSIIndexRangeKey": {
+                        "S": "LSIIndexRangeKey03"
+                    },
+                    "GSIIndexHashKey": {
+                        "S": "GSIIndexHashKey03"
+                    },
+                    "GSIIndexRangeKey": {
+                        "S": "GSIIndexRangeKey03"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Table_LSI_HashKey": {
+                        "S": "Table_LSI_HashKey04"
+                    },
+                    "TableRangeKey": {
+                        "S": "TableRangeKey04"
+                    },
+                    "LSIIndexRangeKey": {
+                        "S": "LSIIndexRangeKey04"
+                    },
+                    "GSIIndexHashKey": {
+                        "S": "GSIIndexHashKey04"
+                    },
+                    "GSIIndexRangeKey": {
+                        "S": "GSIIndexRangeKey04"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Table_LSI_HashKey": {
+                        "S": "Table_LSI_HashKey05"
+                    },
+                    "TableRangeKey": {
+                        "S": "TableRangeKey05"
+                    },
+                    "LSIIndexRangeKey": {
+                        "S": "LSIIndexRangeKey05"
+                    },
+                    "GSIIndexHashKey": {
+                        "S": "GSIIndexHashKey05"
+                    },
+                    "GSIIndexRangeKey": {
+                        "S": "GSIIndexRangeKey05"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Table_LSI_HashKey": {
+                        "S": "Table_LSI_HashKey06"
+                    },
+                    "TableRangeKey": {
+                        "S": "TableRangeKey06"
+                    },
+                    "LSIIndexRangeKey": {
+                        "S": "LSIIndexRangeKey06"
+                    },
+                    "GSIIndexHashKey": {
+                        "S": "GSIIndexHashKey06"
+                    },
+                    "GSIIndexRangeKey": {
+                        "S": "GSIIndexRangeKey06"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Table_LSI_HashKey": {
+                        "S": "Table_LSI_HashKey07"
+                    },
+                    "TableRangeKey": {
+                        "S": "TableRangeKey07"
+                    },
+                    "LSIIndexRangeKey": {
+                        "S": "LSIIndexRangeKey07"
+                    },
+                    "GSIIndexHashKey": {
+                        "S": "GSIIndexHashKey07"
+                    },
+                    "GSIIndexRangeKey": {
+                        "S": "GSIIndexRangeKey07"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Table_LSI_HashKey": {
+                        "S": "Table_LSI_HashKey08"
+                    },
+                    "TableRangeKey": {
+                        "S": "TableRangeKey08"
+                    },
+                    "LSIIndexRangeKey": {
+                        "S": "LSIIndexRangeKey08"
+                    },
+                    "GSIIndexHashKey": {
+                        "S": "GSIIndexHashKey08"
+                    },
+                    "GSIIndexRangeKey": {
+                        "S": "GSIIndexRangeKey08"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Table_LSI_HashKey": {
+                        "S": "Table_LSI_HashKey09"
+                    },
+                    "TableRangeKey": {
+                        "S": "TableRangeKey09"
+                    },
+                    "LSIIndexRangeKey": {
+                        "S": "LSIIndexRangeKey09"
+                    },
+                    "GSIIndexHashKey": {
+                        "S": "GSIIndexHashKey09"
+                    },
+                    "GSIIndexRangeKey": {
+                        "S": "GSIIndexRangeKey09"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Table_LSI_HashKey": {
+                        "S": "Table_LSI_HashKey10"
+                    },
+                    "TableRangeKey": {
+                        "S": "TableRangeKey10"
+                    },
+                    "LSIIndexRangeKey": {
+                        "S": "LSIIndexRangeKey10"
+                    },
+                    "GSIIndexHashKey": {
+                        "S": "GSIIndexHashKey10"
+                    },
+                    "GSIIndexRangeKey": {
+                        "S": "GSIIndexRangeKey10"
+                    }
+                }
+            }
+        }
+    ]
+}

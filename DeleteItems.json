@@ -1,0 +1,4 @@
+{
+    "Table_LSI_HashKey": {"S": "Table_LSI_HashKey01"},
+    "TableRangeKey": {"S": "TableRangeKey01"}
+}

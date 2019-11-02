@@ -1,0 +1,5 @@
+Command Prompt:
+    java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb -port 8080
+Powershell:
+    java -D"java.library.path=./DynamoDBLocal_lib" -jar DynamoDBLocal.jar -sharedDb -port 8080
+

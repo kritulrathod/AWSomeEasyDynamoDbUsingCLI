@@ -1,0 +1,23 @@
+Tutorial - https://www.youtube.com/watch?v=z77UbwWf1po
+
+Running DynamoDb Locally
+1) Install Java Runtime (JRE )
+
+I had 1.8.0 pre-installed.
+C:\>java -version
+java version "1.8.0_221"
+Java(TM) SE Runtime Environment (build 1.8.0_221-b11)
+Java HotSpot(TM) Client VM (build 25.221-b11, mixed mode, sharing)
+
+2) Download DynamoDB for free using one of the following links and unzip the file.
+
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html
+
+3) Use below command to launch the Local DynamoDb instance (above link had details is you are using PowerShell Command)
+
+CD .\dynamodb_local_latest
+java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
+
+Or to specify DynamoDb endpoint port number use
+
+java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb -port 8090

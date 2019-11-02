@@ -1,0 +1,105 @@
+
+aws dynamodb list-tables --endpoint-url http://localhost:8080
+aws dynamodb describe-table --table-name=Items --endpoint-url http://localhost:8080
+
+#TABLENAME  localddb
+#COLUMNS    AttributeName=username,AttributeType=S
+#KEYS       AttributeName=username,KeyType=HASH 
+#REGION     ap-southeast-2
+
+CREATE TABLE USING SHORTHAND SYNTAX
+    aws dynamodb create-table --attribute-definitions AttributeName=username,AttributeType=S --table-name localddb --key-schema AttributeName=username,KeyType=HASH --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1 --region ap-southeast-2 --output json --profile default --endpoint-url http://localhost:8080
+    aws dynamodb delete-table --table-name localddb --endpoint-url http://localhost:8080
+
+CREATE TABLE USING JSON SYNTAX
+    aws dynamodb create-table --cli-input-json file://<table-name>.json  --endpoint-url http://localhost:8080 
+    aws dynamodb create-table --cli-input-json file://CreateTable.json  --endpoint-url http://localhost:8080
+
+{
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "TableHashKey",
+            "AttributeType": "S"
+        },
+        {
+            "AttributeName": "TableRangeKey",
+            "AttributeType": "S"
+        },
+        {
+            "AttributeName": "IndexHashKey",
+            "AttributeType": "S"
+        },
+        {
+            "AttributeName": "IndexRangeKey",
+            "AttributeType": "S"
+        }
+    ],
+    "GlobalSecondaryIndexes": [
+        {
+            "IndexName": "GlobalSecondaryIndexes-index",
+            "Projection": {
+                "ProjectionType": "ALL"
+            },
+            "ProvisionedThroughput": {
+                "WriteCapacityUnits": 1,
+                "ReadCapacityUnits": 1
+            },
+            "KeySchema": [
+                {
+                    "KeyType": "HASH",
+                    "AttributeName": "IndexHashKey"
+                },
+                {
+                    "KeyType": "RANGE",
+                    "AttributeName": "IndexRangeKey"
+                }
+            ]
+        }
+    ],
+    "ProvisionedThroughput": {
+        "WriteCapacityUnits": 1,
+        "ReadCapacityUnits": 1
+    },
+    "TableName": "Items",
+    "KeySchema": [
+        {
+            "KeyType": "HASH",
+            "AttributeName": "TableHashKey"
+        },
+        {
+            "KeyType": "RANGE",
+            "AttributeName": "TableRangeKey"
+        }
+    ]
+}
+
+aws dynamodb batch-write-item --request-items file://ProductCatalog.json
+
+Command to load table with data from json file: Make sure the json file name matches the Dynamo Table Name
+    aws dynamodb batch-write-item --request-items file://Items.json --endpoint-url http://localhost:8080
+
+SCAN ALL RESCORDS FROM TABLE
+    aws dynamodb scan --table-name Items --endpoint-url http://localhost:8080
+
+DELETE ROWS WITH KEYS IN JSON
+    aws dynamodb delete-item --table-name Items --key file://DeleteItems.json --endpoint-url http://localhost:8080
+
+NOTE: 
+Example to run AWS command with specific <profile-name>
+    aws --profile=<profile-name> dynamodb describe-table --table-name=MyTable
+
+GIVES AVAILABLE OPTIONS   
+aws dynamodb ver
+
+
+
+COMMANDS HISTORY
+aws dynamodb list-tables --endpoint-url http://localhost:8080 > Output_List_Table.txt
+aws dynamodb create-table --cli-input-json file://CreateTable.json --endpoint-url http://localhost:8080 > Output_Create_Table.txt
+aws dynamodb describe-table --table-name=Items --endpoint-url http://localhost:8080 > Output_Describe_Table.txt
+aws dynamodb list-tables --endpoint-url http://localhost:8080 > Output_List_Table.txt
+aws dynamodb batch-write-item --request-items file://Items.json --endpoint-url http://localhost:8080 > Output_Batch_Write_Item.txt
+aws dynamodb scan --table-name Items --endpoint-url http://localhost:8080 > Output_TableScanData.json
+aws dynamodb delete-item --table-name Items --key file://DeleteItems.json --endpoint-url http://localhost:8080 > Output_DeleteItem.txt
+aws dynamodb delete-table --table-name=Items --endpoint-url http://localhost:8080 > Output_DeleteTable.txt
+doskey /history

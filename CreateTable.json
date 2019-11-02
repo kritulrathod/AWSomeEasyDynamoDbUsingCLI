@@ -1,0 +1,79 @@
+{
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "Table_LSI_HashKey",
+            "AttributeType": "S"
+        },
+        {
+            "AttributeName": "TableRangeKey",
+            "AttributeType": "S"
+        },
+        {
+            "AttributeName": "LSIIndexRangeKey",
+            "AttributeType": "S"
+        },
+        {
+            "AttributeName": "GSIIndexHashKey",
+            "AttributeType": "S"
+        },
+        {
+            "AttributeName": "GSIIndexRangeKey",
+            "AttributeType": "S"
+        }
+    ],
+    "TableName": "Items",
+    "KeySchema": [
+        {
+            "AttributeName": "Table_LSI_HashKey",
+            "KeyType": "HASH"
+        },
+        {
+            "AttributeName": "TableRangeKey",
+            "KeyType": "RANGE"
+        }
+    ],
+    "ProvisionedThroughput": {
+        "ReadCapacityUnits": 1,
+        "WriteCapacityUnits": 1
+    },
+    "LocalSecondaryIndexes": [
+        {
+            "IndexName": "string",
+            "KeySchema": [
+                {
+                    "AttributeName": "Table_LSI_HashKey",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "LSIIndexRangeKey",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "Projection": {
+                "ProjectionType": "ALL"
+            }
+        }
+    ],
+    "GlobalSecondaryIndexes": [
+        {
+            "IndexName": "GlobalSecondaryIndexes-index",
+            "KeySchema": [
+                {
+                    "AttributeName": "GSIIndexHashKey",
+                    "KeyType": "HASH"
+                },
+                {
+                    "AttributeName": "GSIIndexRangeKey",
+                    "KeyType": "RANGE"
+                }
+            ],
+            "Projection": {
+                "ProjectionType": "ALL"
+            },
+            "ProvisionedThroughput": {
+                "ReadCapacityUnits": 1,
+                "WriteCapacityUnits": 1
+            }
+        }
+    ]
+}
