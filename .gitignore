@@ -1,0 +1,50 @@
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.local
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# Visual Studio 2015 cache/options directory
+.vs/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+Bin/
+bin/
+
+
+# Visual Studio 2015 cache/options directory
+.vs/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+**/Properties/launchSettings.json
+
+*.obj
+*.pdb
+*.tmp
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.svclog
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
